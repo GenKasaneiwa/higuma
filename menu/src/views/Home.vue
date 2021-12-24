@@ -31,7 +31,7 @@
 
             <div class="item">
               <div class="">
-                <p class=""><span class="item__name">{{elem.name}}</span> <span class="item__dollar">$</span><span class="item__price">{{elem.price}}</span></p>
+                <p class=""><span class="item__name">{{elem.name}}</span>&nbsp;&nbsp;<span class="item__dollar">$</span><span class="item__price">{{elem.price}}</span></p>
                 <p class="item__description">{{elem.description}}</p>
               </div>
             </div>
@@ -98,82 +98,82 @@
 
 <style lang="scss" scoped>
 
-  @page {
-    size: A4;
-    size: landscape;
-    margin: 0;
-  }
+@page {
+	margin: 0;
 
-  .item {
-    width: 8.5in;
-    height: 1.5in;
-    border: 1px solid #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	size: A4;
+	size: landscape;
+}
 
-    &__name {
-      font-size: 50px;
-      font-weight: bold;
-      line-height: 1.2;
-    }
+.item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 8.5in;
+	height: 1.5in;
+	border: 1px solid #eee;
 
-    &__description {
-      font-size: 25px;
-      line-height: 1;
-      font-weight: bold;
-    }
+	&__name {
+		font-size: 50px;
+		font-weight: bold;
+		line-height: 1.2;
+	}
 
-    &__dollar {
-      font-size: 40px;
-      font-weight: bold;
-    }
+	&__description {
+		font-size: 25px;
+		font-weight: bold;
+		line-height: 1;
+	}
 
-    &__price {
-      font-size: 50px;
-      font-weight: bold;
-    }
-  }
+	&__dollar {
+		font-size: 40px;
+		font-weight: bold;
+	}
+
+	&__price {
+		font-size: 50px;
+		font-weight: bold;
+	}
+}
 
 
 
-  @media print {
-    html, body {
-      width: 8.27in;
-      height: 11.69in;
-    }
+@media print {
+	html, body {
+		width: 8.27in;
+		height: 11.69in;
+	}
 
-    .is-print{
-      display: none;
-    }
+	.is-print {
+		display: none;
+	}
 
-    .container {
-      padding: 0;
-      margin: auto;
-      max-width: 100%;
-    }
+	.container {
+		max-width: 100%;
+		margin: auto;
+		padding: 0;
+	}
 
-    .wrapper {
-      width: 100%;
-      margin: auto;
-      padding: 0;
-    }
+	.wrapper {
+		width: 100%;
+		margin: auto;
+		padding: 0;
+	}
 
-    .menu {
-      margin: 0 auto 0 auto;
-    }
+	.menu {
+		margin: 0 auto 0 auto;
+	}
 
-    #new-name {
-      display: none;
-    }
+	#new-name {
+		display: none;
+	}
 
-    .mb-4{
-      margin: 0;
-    }
+	.mb-4 {
+		margin: 0;
+	}
 
-    .item {
-      margin: auto;
-    }
-
-  }
+	.item {
+		margin: auto;
+	}
+}
 </style>
