@@ -175,5 +175,19 @@
 	.item {
 		margin: auto;
 	}
+
+	.menu {
+		&:nth-of-type(4n) {
+			.item {
+				page-break-after: always;
+			}
+		}
+
+		&:nth-of-type(4n + 1) {
+			.item {
+				margin: .7in auto 0 auto;
+			}
+		}
+	}
 }
 </style>
