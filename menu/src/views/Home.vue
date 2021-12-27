@@ -1,5 +1,11 @@
 <template>
   <div class="w-full h-screen sheet">
+    <div class="fixed top-0 z-50 w-full bg-gray-100 drop-shadow is-print flex justify-end block">
+      <div class="flex justify-between py-3">
+        <div class="bg-gray-900 hover:bg-gray-500 text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline m-auto mr-5 ml-5 w-60" @click="getPrint">Print</div>
+        <!-- <a href="./higuma_menu.pdf" class="bg-gray-900 hover:bg-gray-500 text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline m-auto ml-1 mr-5 w-60" download>Download PDF</a> -->
+      </div>
+    </div>
     <div class="container md m-auto pt-10 pb-50">
       <div class="bg-white rounded px-8 pt-6 pb-8 mb-4 wrapper">
         <div class="menu" v-for="(elem, index) in elements" :key="index">
@@ -45,10 +51,6 @@
 
         </div>
         <input id="new-name" type="text">
-        
-        <div class="flex items-center justify-between mt-10 is-print">
-          <div class="bg-gray-900 hover:bg-gray-500 text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline m-auto w-full" @click="getPrint">Export as PDF</div>
-        </div>
 
       </div>
     </div>
@@ -114,26 +116,29 @@
 	border: 1px solid #eee;
 
 	&__name {
-		font-size: 50px;
+		font-size: 60px;
 		font-weight: bold;
-		line-height: 1.2;
 	}
 
 	&__description {
-		font-size: 25px;
+		font-size: 33px;
 		font-weight: bold;
-		line-height: 1;
+		line-height: .8;
 	}
 
 	&__dollar {
-		font-size: 40px;
+		font-size: 50px;
 		font-weight: bold;
 	}
 
 	&__price {
-		font-size: 50px;
+		font-size: 60px;
 		font-weight: bold;
 	}
+
+  &__name, &__price {
+    line-height: 1;
+  }
 }
 
 

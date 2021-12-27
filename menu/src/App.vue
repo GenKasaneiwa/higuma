@@ -7,8 +7,14 @@
 </template>
 
 <style>
+/* @import url('https://fonts.googleapis.com/css2?family=Asul:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 #app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
+	/* font-family: Avenir, Helvetica, Arial, sans-serif; */
+	/* font-family: 'Asul', sans-serif; */
+	font-family: 'Inter', sans-serif;
+
 	text-align: center;
 	color: #2c3e50;
 
