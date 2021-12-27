@@ -20,7 +20,7 @@
             <label class="block text-gray-700 text-sm font-bold mb-2 text-left" for="price">
               Menu Price
             </label>
-            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="price" type="number" placeholder="0.00" v-model="elem.price">
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="price" type="number" placeholder="0.00" v-model="elem.price" @input="checkPass">
           </div>
 
           <div class="mb-4 is-print">
@@ -37,7 +37,7 @@
 
             <div class="item">
               <div class="">
-                <p class=""><span class="item__name">{{elem.name}}</span>&nbsp;&nbsp;<span class="item__dollar">$</span><span class="item__price">{{elem.price}}</span></p>
+                <p class=""><span class="item__name">{{elem.name}}</span>&nbsp;&nbsp;<span class="item__dollar"></span><span class="item__price">{{elem.price}}</span></p>
                 <p class="item__description">{{elem.description}}</p>
               </div>
             </div>
@@ -74,13 +74,13 @@
       }
     },
     methods: {
-      append: function(){
+      append(){
         this.elements.push({
           name: $('#new-name').val(),
         });
         $('#new-name').val('');
       },
-      remove: function(index) {
+      remove(index) {
           this.elements.splice(index, 1);
       },
       getPrint() {
@@ -93,6 +93,11 @@
         // let sec = now.getSeconds();
         document.title = 'menu_' + month + date + hour + min + year;
         window.print();
+      },
+      checkPass(){
+        if(this.elements.price != ''){
+          $('.item__dollar').text('$');
+        }
       }
     }
   }
