@@ -14,7 +14,8 @@
 #app {
 	/* font-family: Avenir, Helvetica, Arial, sans-serif; */
 	/* font-family: 'Asul', sans-serif; */
-	font-family: 'Inter', sans-serif;
+	/* font-family: 'Inter', sans-serif; */
+	font-family: 'IBM Plex Serif', serif;
 
 	text-align: center;
 	color: #5b2b00;
