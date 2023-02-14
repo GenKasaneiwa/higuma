@@ -9,16 +9,16 @@
 <style>
 /* @import url('https://fonts.googleapis.com/css2?family=Asul:wght@700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap");
 
 #app {
 	/* font-family: Avenir, Helvetica, Arial, sans-serif; */
 	/* font-family: 'Asul', sans-serif; */
 	/* font-family: 'Inter', sans-serif; */
-	font-family: 'IBM Plex Serif', serif;
-
+	font-family: "IBM Plex Serif", serif;
 	text-align: center;
-	color: #5b2b00;
+	/* color: #5b2b00; */
+	color: #006195;
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
