@@ -17,8 +17,8 @@
 	/* font-family: 'Inter', sans-serif; */
 	font-family: "IBM Plex Serif", serif;
 	text-align: center;
-	/* color: #006195; */
-	color: #006195;
+	/* color: #002b42; */
+	color: #002b42;
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
